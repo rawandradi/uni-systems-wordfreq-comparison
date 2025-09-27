@@ -29,19 +29,6 @@ uni-systems-wordfreq-comparison/
 - **Multithreading:** Uses POSIX threads (pthreads) to run tasks concurrently with synchronization.  
 
 ---
-
-## 🚀 How to Compile & Run
-Make sure you have **GCC** and **POSIX threads** installed (Linux or WSL recommended).
-
-### Compile:
-```bash
-# Naive approach
-gcc Naive.c -o naive
-
-# Multiprocessing approach
-gcc MultiProcessing.c -o multiprocessing
-
----
 📊 Results
 
 Execution time and throughput were measured for each approach.
@@ -58,3 +45,16 @@ gcc Threading.c -o threading -lpthread
 👩‍🎓 Author : Rawand Radi
 
 Faculty of Engineering and Technology-Birzeit university
+
+---
+
+## 🚀 How to Compile & Run
+Make sure you have **GCC** and **POSIX threads** installed (Linux or WSL recommended).
+
+### Compile:
+```bash
+# Naive approach
+gcc Naive.c -o naive
+
+# Multiprocessing approach
+gcc MultiProcessing.c -o multiprocessing
