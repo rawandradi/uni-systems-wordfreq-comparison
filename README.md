@@ -13,13 +13,12 @@ The goal is to **compare execution times** of these approaches and evaluate thei
 ---
 
 ## 📂 Project Structure
-uni-systems-wordfreq-comparison/
-├── Naive.c # Sequential implementation
-├── MultiProcessing.c # Multiprocessing implementation
-├── Threading.c # Multithreading implementation
-├── OSReport.pdf # Detailed report with results and analysis
-└── README.md # Project documentation
-
+uni-systems-wordfreq-comparison/  
+├── Naive.c               # Sequential implementation  
+├── MultiProcessing.c     # Multiprocessing implementation  
+├── Threading.c           # Multithreading implementation  
+├── OSReport.pdf          # Detailed report with results and analysis  
+└── README.md             # Project documentation  
 
 ---
 
@@ -29,22 +28,15 @@ uni-systems-wordfreq-comparison/
 - **Multithreading:** Uses POSIX threads (pthreads) to run tasks concurrently with synchronization.  
 
 ---
-📊 Results
 
+## 📊 Results
 Execution time and throughput were measured for each approach.
 
-Naive: Slowest, suitable only for small files.
-Multiprocessing: Best speedup using multiple CPU cores.
-Multithreading: Moderate improvement, good for I/O-bound tasks.
+- **Naive:** Slowest, suitable only for small files.  
+- **Multiprocessing:** Best speedup using multiple CPU cores.  
+- **Multithreading:** Moderate improvement, good for I/O-bound tasks.  
 
-📑 Detailed results, figures, and Amdahl’s law analysis are in OSReport.pdf.
-
-# Multithreading approach (requires -lpthread)
-gcc Threading.c -o threading -lpthread
-
-👩‍🎓 Author : Rawand Radi
-
-Faculty of Engineering and Technology-Birzeit university
+📑 Detailed results, figures, and Amdahl’s law analysis are in **OSReport.pdf**.
 
 ---
 
@@ -58,3 +50,6 @@ gcc Naive.c -o naive
 
 # Multiprocessing approach
 gcc MultiProcessing.c -o multiprocessing
+
+# Multithreading approach (requires -lpthread)
+gcc Threading.c -o threading -lpthread
